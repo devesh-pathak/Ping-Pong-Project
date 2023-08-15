@@ -1,0 +1,86 @@
+/* applying some default stylings */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styling the document body */
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* styling the container div */
+#container {
+  width: 100%;
+  height: 100%;
+  background: cyan;
+  position: relative;
+}
+
+/* styling both the bars */
+.bar {
+  background: #fff;
+  display: inline-block;
+  padding: 6px 60px;
+  position: absolute;
+  font-weight: bold;
+}
+
+/* styling the top bar */
+#bar__top {
+  top: 0;
+}
+
+/* styling the bottom bar */
+#bar__bottom {
+  bottom: 0;
+}
+
+/* styling the ball */
+#ball {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: blue;
+}
+
+/* styling the score background div */
+.score__bg {
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+}
+
+/* styling PlayerA score bg */
+#playerA__score__bg {
+  top: 0;
+  left: 0;
+  border-bottom: 2px solid #333;
+}
+
+/* styling PlayerB score bg */
+#playerB__score__bg {
+  bottom: 0;
+  left: 0;
+}
+
+/* styling player's score div */
+.player__score {
+  position: absolute;
+  font-size: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.4;
+}
+
+/* styling playerA score div */
+#playerA__score__div {
+  bottom: 2px;
+}
